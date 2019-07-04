@@ -20,7 +20,7 @@ function [J, grad] = cost(theta, X, y)
 	
 	% set gradient
 	grad(1) = sum((sigmoid(X * theta) - y) .* X(:, 1)) / m;
-	for i ; 2:n
+	for i = 2:n
 		grad(i) = sum((sigmoid(X * theta) - y) .* X(:, i)) / m + theta(i) * lambda / m;   
 	endfor
 	
