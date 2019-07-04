@@ -21,9 +21,10 @@ function X_poly = mapFeatures(X, degree)
 	
 	% initialize useful values
 	n = length(X(1,:)); % number of features
+	m = length(X(:,1)); % number of training examples
 	
-	% initialize the matrix with mapped features
-	X_poly = X;
+	% initialize the matrix with mapped features, adding ones for the zeroth feature
+	X_poly = [ones(m,1), X];
 	
 	% exponentiate every feature by themselves
 	for i = 2:degree

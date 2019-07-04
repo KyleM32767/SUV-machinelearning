@@ -20,8 +20,8 @@ y = load('data_y.txt');
 m = length(y);  % number of training samples
 n = length(X(1,:)); % number of features
 
-% append the data with polynomial terms up to the 4th power
-degree = 4;
+% append the data with polynomial terms up to the 2nd power
+degree = 2;
 X = mapFeatures(X, degree);
 
 % get a model by minimizing the cost function with fminunc
