@@ -5,7 +5,7 @@
 	
 	author: Kyle Mitard
 	
-	Created 3 August 2019
+	Created 3 July 2019
 #}
 
 function g = sigmoid(z)
