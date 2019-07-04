@@ -2,7 +2,7 @@
 	
 	trainModel.m
 	
-	Trains a model for linear regression, and stores it in model.txt
+	Trains a model for logistic regression, and stores it in model.txt
 	
 	Author: Kyle Mitard
 	
